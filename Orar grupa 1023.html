@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orar grupa 1023</title>
+<style>
+:root{--bg:#f2f4fa;--card:#fff;--ink:#181d3a;--mute:#69708f;--line:#e2e6f2;--curs:#4548d6;--curs-bg:#e8e9ff;--sem:#0b8f63;--sem-bg:#dcf5ea;--alt:#a85d00;--alt-bg:#ffefd2;--tab:#fff;--tab-on:#181d3a;--tab-on-ink:#fff;--odd:#c2570c;--even:#6d3fd6;--bad:#b3261e;--bad-bg:#fde3e1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1121;--card:#1a1f38;--ink:#eef0fb;--mute:#9aa1c2;--line:#2a3050;--curs:#9ea0ff;--curs-bg:#2a2d5c;--sem:#54d6a4;--sem-bg:#123a2e;--alt:#ffc46b;--alt-bg:#43300f;--tab:#1a1f38;--tab-on:#eef0fb;--tab-on-ink:#0e1121;--odd:#e0771f;--even:#8b64ef;--bad:#ff9a9f;--bad-bg:#4a1a1d}}
+:root[data-theme="dark"]{--bg:#0e1121;--card:#1a1f38;--ink:#eef0fb;--mute:#9aa1c2;--line:#2a3050;--curs:#9ea0ff;--curs-bg:#2a2d5c;--sem:#54d6a4;--sem-bg:#123a2e;--alt:#ffc46b;--alt-bg:#43300f;--tab:#1a1f38;--tab-on:#eef0fb;--tab-on-ink:#0e1121;--odd:#e0771f;--even:#8b64ef;--bad:#ff9a9f;--bad-bg:#4a1a1d}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:520px;margin:0 auto;padding:16px 16px 40px}
+h1{margin:0;font-size:24px;letter-spacing:-.02em;font-weight:800}
+.sub{margin:2px 0 14px;color:var(--mute);font-size:14px}
+.hero{display:grid;grid-template-columns:44px 1fr 44px;align-items:center;gap:6px;background:var(--par);color:#fff;border-radius:20px;padding:14px 10px;text-align:center}
+.hero.odd{--par:var(--odd)}.hero.even{--par:var(--even)}
+.hero .big{font-size:27px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.hero .small{font-size:14px;opacity:.92;margin-top:4px}
+.nav{width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-size:26px;line-height:1;cursor:pointer}
+.nav:disabled{opacity:.3}
+.tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;position:sticky;top:env(safe-area-inset-top,0px);padding:8px 0;background:var(--bg);z-index:5}
+.tab{border:0;border-radius:12px;background:var(--tab);color:var(--ink);font:inherit;padding:7px 0;cursor:pointer;position:relative;box-shadow:0 0 0 1px var(--line) inset;line-height:1.2}
+.tab b{display:block;font-size:15px}.tab span{font-size:12px;color:var(--mute)}
+.tab[aria-selected="true"]{background:var(--tab-on);color:var(--tab-on-ink);box-shadow:none}
+.tab[aria-selected="true"] span{color:var(--tab-on-ink);opacity:.75}
+.tab.today::after{content:"";position:absolute;top:4px;right:5px;width:6px;height:6px;border-radius:50%;background:var(--par)}
+:focus-visible{outline:3px solid var(--curs);outline-offset:2px}
+.bar{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:12px 0}
+.day{font-size:19px;font-weight:800;margin:0}
+.count{color:var(--mute);font-size:13px}
+.card{display:grid;grid-template-columns:58px 1fr;gap:12px;background:var(--card);border-radius:16px;padding:14px;margin-bottom:10px;border-left:5px solid var(--c);box-shadow:0 1px 0 var(--line)}
+.card.curs{--c:var(--curs)}.card.sem{--c:var(--sem)}
+.t1{font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
+.t2{font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums}
+.name{font-size:16px;font-weight:700;line-height:1.25;margin:0 0 6px}
+.meta{font-size:14px;color:var(--mute);margin:0 0 8px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px}
+.pill.curs{background:var(--curs-bg);color:var(--curs)}.pill.sem{background:var(--sem-bg);color:var(--sem)}.pill.alt{background:var(--alt-bg);color:var(--alt)}
+.pill.grp{background:var(--line);color:var(--ink)}.pill.bad{background:var(--bad-bg);color:var(--bad)}
+.empty{text-align:center;color:var(--mute);padding:40px 10px;background:var(--card);border-radius:16px}
+.note{font-size:12px;color:var(--mute);margin-top:18px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Orar grupa 1023</h1>
+  <p class="sub">Informatică Economică · Seria F · Semestrul 1</p>
+  <div class="hero" id="hero">
+    <button class="nav" id="prev" aria-label="Săptămâna anterioară">‹</button>
+    <div><div class="big" id="big"></div><div class="small" id="small"></div></div>
+    <button class="nav" id="next" aria-label="Săptămâna următoare">›</button>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="bar"><h2 class="day" id="dayName"></h2><span class="count" id="count"></span></div>
+  <div id="list"></div>
+  <p class="note">Săptămânile sunt numărate continuu din semestru (săpt. 1 = 28 sep – 3 oct), nu pe luni ca în portal. Orele „La 2 săpt." apar doar în săptămâna potrivită. Curs = toată seria F, Seminar = doar grupa 1023. La Psihologia educației (seria I) seminarul se face într-o singură grupă: alege una dintre grupele 1, 2, 5 sau 6.</p>
+</div>
+<script>
+const DAYS=["Luni","Marți","Miercuri","Joi","Vineri","Sâmbătă"],SHORT=["Lu","Ma","Mi","Jo","Vi","Sâ"];
+const MS=["ian","feb","mar","apr","mai","iun","iul","aug","sep","oct","nov","dec"];
+const ML=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
+const N=14, START=[2026,8,28]; // luni, 28 septembrie 2026 = săptămâna 1 (impară)
+// t: c=curs, s=seminar · w: doar în săptămâna "odd"/"even"
+const S=[
+ [ {a:"07:30",b:"09:00",t:"s",n:"Bazele programării calculatoarelor",r:"2317",p:"Stoica Oana-Larisa"},
+   {a:"12:30",b:"14:00",t:"s",n:"Psihologia educației",r:"3214",p:"Păduraru Monica",g:"Grupa 1"},
+   {a:"14:10",b:"15:40",t:"s",n:"Psihologia educației",r:"3214",p:"Păduraru Monica",g:"Grupa 2"} ],
+ [ {a:"14:10",b:"15:40",t:"s",n:"Limba engleză și comunicare de specialitate 1",r:"2415",p:"Bourbonnais"},
+   {a:"14:10",b:"15:40",t:"c",n:"Psihologia educației",r:"3214",p:"Păduraru Monica"},
+   {a:"15:50",b:"17:20",t:"c",n:"Bazele cercetărilor operaționale",r:"0601",p:"Păun Ramona Mihaela"},
+   {a:"17:30",b:"19:00",t:"c",n:"Introducere în contabilitate",r:"3 M VII",p:"Ștefănescu Aurelia"} ],
+ [ {a:"14:10",b:"15:40",t:"s",n:"Bazele cercetărilor operaționale",r:"2212",p:"Păun Ramona Mihaela"},
+   {a:"15:50",b:"17:20",t:"c",n:"Bazele programării calculatoarelor",r:"2201",p:"Stoica Marian"} ],
+ [ {a:"07:30",b:"09:00",t:"c",n:"Algebră",r:"2717",p:"Dedu Silvia Cristina"},
+   {a:"09:10",b:"10:40",t:"s",n:"Economie",r:"2304",p:"Papuc Chiva Marilena",w:"even"},
+   {a:"10:50",b:"12:20",t:"s",n:"Introducere în contabilitate",r:"2302",p:"Neacșu Ioana",w:"odd"},
+   {a:"10:50",b:"12:20",t:"s",n:"Algebră",r:"2304",p:"Tudorache Ana Daniela",w:"even"},
+   {a:"14:10",b:"15:40",t:"s",n:"Psihologia educației",r:"3214",p:"Păduraru Monica",g:"Grupa 5"},
+   {a:"17:30",b:"19:00",t:"s",n:"Psihologia educației",r:"3217",p:"Calotă Ruxandra",g:"Grupa 6"} ],
+ [ {a:"12:30",b:"14:00",t:"c",n:"Bazele tehnologiei informației",r:"2717",p:"Zota Razvan"},
+   {a:"14:10",b:"15:40",t:"s",n:"Bazele tehnologiei informației",r:"1203",p:"Zota Razvan",w:"even"},
+   {a:"15:50",b:"17:20",t:"c",n:"Economie",r:"2202",p:"Papuc Chiva Marilena"} ],
+ [ {a:"10:50",b:"12:20",t:"s",n:"Statistică",r:"2604",p:"Sacală Mihail-Dumitru"},
+   {a:"12:30",b:"14:00",t:"c",n:"Statistică",r:"0319",p:"Sacală Mihail-Dumitru"} ]
+];
+const $=id=>document.getElementById(id);
+const dt=(w,d)=>new Date(START[0],START[1],START[2]+7*w+d);
+const par=w=>w%2===0?"odd":"even";
+const short=x=>x.getDate()+" "+MS[x.getMonth()];
+const esc=s=>s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+function nowPos(){
+  const t=new Date(); if(t.getDay()===0) t.setDate(t.getDate()+1);
+  const m=new Date(t.getFullYear(),t.getMonth(),t.getDate()-((t.getDay()+6)%7));
+  const w=Math.round((m-dt(0,0))/604800000);
+  return w<0||w>=N?{w:Math.min(Math.max(w,0),N-1),d:0,in:false}:{w,d:(t.getDay()+6)%7,in:true};
+}
+const P=nowPos(); let wk=P.w, day=P.d;
+function render(){
+  const p=par(wk), h=$("hero"), today=new Date(), isNow=P.in&&wk===P.w;
+  h.className="hero "+p;
+  $("big").textContent="Săptămână "+(p==="odd"?"impară":"pară");
+  $("small").textContent="Săpt. "+(wk+1)+" din semestru · "+short(dt(wk,0))+" – "+short(dt(wk,5));
+  $("prev").disabled=wk===0; $("next").disabled=wk===N-1;
+  $("tabs").innerHTML=DAYS.map((d,i)=>{const x=dt(wk,i),t=isNow&&i===((today.getDay()+6)%7)&&today.getDay()!==0;
+    return `<button class="tab${t?" today":""}" role="tab" aria-selected="${i===day}" data-i="${i}" aria-label="${d} ${short(x)}"><b>${SHORT[i]}</b><span>${x.getDate()}</span></button>`}).join("");
+  const x=dt(wk,day), items=S[day].filter(o=>!o.w||o.w===p);
+  $("dayName").textContent=DAYS[day]+", "+x.getDate()+" "+ML[x.getMonth()];
+  $("count").textContent=items.length?items.length+(items.length===1?" oră":" ore")+" · "+items[0].a+" – "+items[items.length-1].b:"";
+  $("list").innerHTML=items.length?items.map(o=>{const k=o.t==="c"?"curs":"sem";
+    return `<div class="card ${k}"><div><div class="t1">${o.a}</div><div class="t2">${o.b}</div></div>
+    <div><p class="name">${esc(o.n)}</p><p class="meta">Sala ${esc(o.r)} · ${esc(o.p)}</p>
+    <div class="pills"><span class="pill ${k}">${o.t==="c"?"Curs":"Seminar"}</span>${o.w?`<span class="pill alt">La 2 săpt.</span>`:""}${o.g?`<span class="pill grp">${o.g}</span>`:""}${items.some(y=>y!==o&&y.a===o.a&&(!y.w||!o.w||y.w===o.w))?`<span class="pill bad">Se suprapune</span>`:""}</div></div></div>`}).join("")
+    :`<div class="empty">Nicio oră în ziua asta. Timp liber!</div>`;
+}
+$("prev").onclick=()=>{if(wk>0){wk--;render()}};
+$("next").onclick=()=>{if(wk<N-1){wk++;render()}};
+$("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(b){day=+b.dataset.i;render()}});
+render();
+</script>
+</body>
+</html>
